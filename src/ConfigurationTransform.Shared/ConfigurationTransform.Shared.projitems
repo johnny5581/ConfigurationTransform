@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>cdf62018-38ba-42eb-8f91-fedea6f3d93b</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ConfigurationTransform</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ConfigurationTransformPackage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GlobalSuppressions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PkgCmdID.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Remove\RemoveCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\DeleteFileOnClose.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\DeleteFileOnDocumentClose.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\DeleteFileOnWindowFrameClose.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Extensions\DTEExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Extensions\ProjectExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Extensions\ProjectItemExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Extensions\ProjectItemsExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Extensions\ProjectsExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Extensions\PropertiesExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Extensions\PropertyExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Extensions\SelectedItemsExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Extensions\VsServicesExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Helpers\PathHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\IDeleteFileOnClose.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\IDeleteFileOnWindowFrameClose.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\IVsServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\MessageBoxResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\VsDiffOpt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\VsServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transform\AfterTargets.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transform\ConfigTransformManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transform\Extensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transform\TargetTransformArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transform\VsProjectXmlTransform.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transform\XmlExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transform\XmlTransform.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Wrappers\FileWrapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Wrappers\IFileWrapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Wrappers\IStreamManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Wrappers\IStreamWriterWrapper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Wrappers\StreamManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Wrappers\StreamWriterWrapper.cs" />
+  </ItemGroup>
+</Project>
